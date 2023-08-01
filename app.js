@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
 const http = require("http").createServer(app);
+const path = require('path');
 
 const PORT = process.env.PORT || 8000;
 
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname + "/public") ));
 
 
 app.get('/', (req, res) => {
