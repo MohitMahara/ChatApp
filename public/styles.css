@@ -156,6 +156,8 @@
     
     .msg-area{
      height: 86vh;
+     padding-left: 25px;
+     padding-right: 25px;
     }
 
     section.chat-section,
