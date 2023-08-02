@@ -6,6 +6,7 @@ const hbs = require("hbs");
 const publicPath = path.join(__dirname, "/public");
 const viewsPath = path.join(__dirname, '/views');
 
+
 const PORT = process.env.PORT || 8000;
 
 app.set("view engine", "hbs");
@@ -14,7 +15,7 @@ app.set('views', viewsPath );
 
 
 app.get('/', (req, res) => {
-    res.render("index.hbs");
+    res.render("index");
 })
 
 
